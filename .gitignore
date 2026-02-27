@@ -1,0 +1,96 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Data (DO NOT VERSION DATA)
+# =========================
+data/raw/*
+data/processed/*
+data/interim/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# =========================
+# Model artifacts
+# =========================
+models/
+*.pkl
+*.joblib
+*.model
+*.h5
+
+# =========================
+# Logs / Reports / Outputs
+# =========================
+logs/
+*.log
+reports/figures/*
+reports/output/*
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# Kaggle credentials (never commit)
+.kaggle/
+kaggle.json
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# macOS system files
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Build / Packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Caches
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.orig
+
+# =========================
+# AMLSim (if ever present locally)
+# =========================
+AMLSim/
