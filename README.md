@@ -7,6 +7,7 @@ Develop a machine learning model to detect emerging structuring behavior using t
 ## Approach
 
 * Monthly client snapshots built from historical transactions
+
 * Compare:
 
   * Rule-based detection
