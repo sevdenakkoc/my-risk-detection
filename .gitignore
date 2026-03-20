@@ -22,7 +22,10 @@ ENV/
 data/raw/*
 data/processed/*
 data/interim/*
+
+# to keep the folder structure, we can add .gitkeep files in each data subfolder
 !data/raw/.gitkeep
+!data/interim/.gitkeep
 !data/processed/.gitkeep
 
 # =========================
