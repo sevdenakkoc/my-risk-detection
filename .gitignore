@@ -28,6 +28,9 @@ data/interim/*
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 
+# data download script
+!data/raw/download_dataset.py
+
 # =========================
 # Model artifacts
 # =========================
