@@ -1,10 +1,14 @@
-# Temporal Client Risk Scoring for Detection of Structuring Behavior
+# Temporal Client Risk Scoring for AML Pattern Detection
 
 ## Objective
 
-Develop a client-level risk scoring model that predicts whether a client will exhibit **structuring behavior** (deliberate transaction splitting to avoid regulatory thresholds) within the next 30 days — using only data available at prediction time.
+Develop a client-level risk scoring model that predicts whether a client will exhibit **suspicious AML behavior** (fan-in or cycle patterns) within the next 30 days, using only data available at prediction time.
 
 This project demonstrates how supervised machine learning can enhance AML (Anti-Money Laundering) detection by modeling **behavioral evolution over time**, rather than relying on static rule-based alerts.
+
+### AML Patterns Detected
+- **Fan-in:** Multiple sources funneling money to a single receiver - a common money laundering technique
+- **Cycle:** Circular flows between accounts designed to obscure the origin of funds
 
 ## Approach
 
@@ -25,7 +29,7 @@ Instead of classifying individual transactions, we construct a **temporal behavi
 
 ## Dataset
 
-Synthetic transaction data generated using [IBM AMLSim](https://github.com/IBM/AMLSim). See [`data/README.md`](data/README.md) for download instructions.
+Synthetic transaction data generated using [IBM AMLSim](https://github.com/IBM/AMLSim), containing fan-in and cycle money laundering patterns. See [`data/README.md`](data/README.md) for download instructions.
 
 ## Project Structure
 ```
